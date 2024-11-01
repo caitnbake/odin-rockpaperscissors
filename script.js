@@ -3,14 +3,20 @@
     let getComputerChoice = () => {
         let choiceNumber = Math.floor(Math.random()*3 + 1);
         if (choiceNumber === 1) {
-            return "Rock";
+            return "rock";
         } else if (choiceNumber === 2) {
-            return "Paper";
+            return "paper";
         } else {
-            return "Scissors";
+            return "scissors";
         }
     }
 
+    let getHumanChoice = () => {
+        let humanChoice = prompt("Rock, paper, or scissors?");
+        return humanChoice.toLowerCase();
+    }
+
+    console.log(getHumanChoice());
     // Get user's choice
     // Decide the winner
     // Add point to winner's score
