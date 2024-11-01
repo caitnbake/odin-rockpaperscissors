@@ -12,8 +12,7 @@
     }
 
     let getHumanChoice = () => {
-        let humanChoice = prompt("Rock, paper, or scissors?");
-        return humanChoice.toLowerCase();
+        return humanChoice = prompt("Rock, paper, or scissors?").toLowerCase();
     }
 
     console.log(getHumanChoice());
