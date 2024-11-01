@@ -31,6 +31,10 @@ let playGame = () => {
                 console.log(`You lose! ${computerChoice} beats ${humanChoice}.`);
                 computerScore += 1;
                 break;
+            case (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") :
+                console.log("You entered an invalid answer. You lose");
+                computerScore += 1;
+                break;
             default :
                 console.log("It's a tie!");
         }
